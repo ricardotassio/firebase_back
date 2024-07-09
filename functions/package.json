@@ -8,6 +8,7 @@
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run shell",
     "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log",
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
     "test:unit": "npm test -- --watch --coverage=false -c jest-unit-config.js"
   },
@@ -42,6 +43,8 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.12",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.6",
     "express": "^4.19.2",
     "firebase-functions-test": "^3.3.0",
     "husky": "^9.0.11",
